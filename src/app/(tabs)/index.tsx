@@ -11,7 +11,6 @@ export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <CustomNavBar />
-
       
         <ListDisplay products={products} />
       
