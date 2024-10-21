@@ -25,10 +25,10 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
-
+ // to hide (tabs)
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack screenOptions={{headerBackTitleVisible:false}}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
